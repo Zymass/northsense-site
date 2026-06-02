@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northsense</title>
+<style>
+  :root {
+    --canvas: #F4F1E8;
+    --surface: #FFFFFF;
+    --text: #0E1014;
+    --text-secondary: #5A6068;
+    --accent: #1F4E8C;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #0B0F14;
+      --surface: #161B22;
+      --text: #F2F4F6;
+      --text-secondary: #A5ABB2;
+      --accent: #5C8FD9;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--canvas);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 24px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+  }
+  p, li { font-size: 17px; color: var(--text); }
+  .muted { color: var(--text-secondary); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+  nav a {
+    padding: 10px 16px;
+    background: var(--surface);
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .hero { padding: 80px 0 24px; }
+  .tagline { font-size: 22px; color: var(--text-secondary); margin: 0 0 32px; }
+  footer { margin-top: 80px; font-size: 13px; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>Northsense</h1>
+    <p class="tagline">A 90-second daily compass challenge. Sharpen your sense of direction, one round at a time.</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </section>
+
+  <section>
+    <h2>What it is</h2>
+    <p>
+      Each day Northsense names a bearing — north, southwest, 47 degrees — and asks you to
+      point your iPhone at it. Tap to lock when you think you're aimed right; we measure the
+      angular error and score the round. Five rounds make a Daily Quest. Stay sharp, build a streak.
+    </p>
+    <h2>Four modes</h2>
+    <p>
+      Daily Quest, Free Practice, No-eyes (voice and haptics only), and Memory Walk —
+      walk in any direction, then point back from memory.
+    </p>
+    <h2>Private by design</h2>
+    <p>
+      Zero data leaves your device. No account, no cloud, no analytics, no third-party SDKs.
+      Compass heading and step count are read only while you're in a round.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Ilia Filiaev. Northsense is a training game, not a navigation tool.
+  </footer>
+</div>
+</body>
+</html>
